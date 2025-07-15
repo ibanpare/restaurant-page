@@ -1,5 +1,7 @@
-import { pageload } from "./page.js";
-import img from "./cafe.png";
+import home from "./home.js";
+import loadMenu from "./menu.js";
+import loadAbout from "./about.js";
 
-pageload(img);
-console.log("Hello hello restaurant page")
+home();
+loadMenu();
+loadAbout();
