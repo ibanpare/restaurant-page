@@ -1,4 +1,5 @@
-export function pageload(img) {
+import img from "./cafe.png";
+export function pageload() {
   const contentDiv = document.querySelector("#content");
 
   const title = document.createElement("h1");
