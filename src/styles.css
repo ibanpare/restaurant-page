@@ -1,0 +1,83 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --sand: #f4e8d4;
+  --sunset-peach: #f7c6a3;
+  --ocean-blue: #7abfc3;
+  --leaf-green: #a5c48c;
+  --driftwood: #c2b6a2;
+  --dark-brown: #5b4a3c;
+  --accent-orange: #ff9f66;
+  --text-color: #3e3e3e;
+  --background-color: #fffdf9;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: var(--sand);
+    width: 100vw;
+}
+
+nav {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tab-button {
+    background-color: var(--sunset-peach);
+    border: 1px solid var(--accent-orange);
+}
